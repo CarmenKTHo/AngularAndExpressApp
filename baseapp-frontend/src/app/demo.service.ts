@@ -17,7 +17,7 @@ export class DemoService {
     // for all back-end code.
 
     // Uses http.get() to load data from a single API endpoint
-    getFoods(): Observable<Object> {
+    getFoods() {
         return this.http.get('/api/food');
     }
 
