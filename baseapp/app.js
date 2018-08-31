@@ -8,13 +8,6 @@ app.use(express.static(__dirname));
 app.use(bodyParser.json()); // support json encoded bodies
 // app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-// some data for the API
-var foods = [
-  { "id": 1, "name": "Donuts" },
-  { "id": 2, "name": "Pizza" },
-  { "id": 3, "name": "Tacos" }
-];
-
 var services = [
   { "findajob": "Find public and private sector job opportunities and hiring programs, apply or extend a work permit, get a Social Insurance Number, a criminal record check or a security clearance." },
   { "employmentinsurance": "Information about Employment Insurance (EI) temporary benefits for workers, sickness, fishing and family-related benefits as well as how to apply online and submit a report." },
@@ -31,17 +24,6 @@ var services = [
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname,'/dist/index.html'))
 });
-
-// the GET "foods" API endpoint
-app.get('/api/food', function (req, res) {
-
-    console.log("GET foods");
-
-    // This is a very simple API endpoint. It returns the current value of the "foods" array.
-    res.send(foods);
-
-});
-
 
 app.get('/api/services', function (req, res) {
 

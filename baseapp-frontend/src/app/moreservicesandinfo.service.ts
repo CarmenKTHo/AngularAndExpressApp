@@ -7,7 +7,7 @@ const httpOptions = {
 };
 
 @Injectable()
-export class DemoService {
+export class MoreservicesandinfoService {
 
     constructor(private http:HttpClient) {
     }
@@ -17,8 +17,8 @@ export class DemoService {
     // for all back-end code.
 
     // Uses http.get() to load data from a single API endpoint
-    getFoods() {
-        return this.http.get('/api/food');
+    getServices() {
+        return this.http.get('/api/services');
     }
 
 }
