@@ -9,9 +9,10 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MoreservicesandinfoComponent } from './moreservicesandinfo/moreservicesandinfo.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule, HttpClientModule],
+    imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
     declarations: [AppComponent,
       CarouselComponent,
       MoreservicesandinfoComponent, 
