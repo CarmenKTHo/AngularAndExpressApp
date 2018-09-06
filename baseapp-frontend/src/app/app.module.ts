@@ -9,15 +9,25 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MoreservicesandinfoComponent } from './moreservicesandinfo/moreservicesandinfo.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
+
 import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule, HttpClientModule, AppRoutingModule],
-    declarations: [AppComponent,
+    imports: [
+      BrowserModule,
+      FormsModule,
+      HttpClientModule,
+      AppRoutingModule
+    ],
+    declarations: [
+      AppComponent,
       CarouselComponent,
-      MoreservicesandinfoComponent, 
+      MoreservicesandinfoComponent,
       HeaderComponent,
-      FooterComponent],
+      FooterComponent,
+      HomepageComponent
+    ],
     providers: [MoreservicesandinfoService],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     bootstrap: [AppComponent]
