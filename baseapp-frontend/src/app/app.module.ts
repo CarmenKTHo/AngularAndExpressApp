@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 import { AppRoutingModule } from './/app-routing.module';
+import { PdoclandingComponent } from './pdoclanding/pdoclanding.component';
 
 @NgModule({
     imports: [
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './/app-routing.module';
       MoreservicesandinfoComponent,
       HeaderComponent,
       FooterComponent,
-      HomepageComponent
+      HomepageComponent,
+      PdoclandingComponent
     ],
     providers: [MoreservicesandinfoService],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
