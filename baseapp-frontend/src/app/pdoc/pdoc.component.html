@@ -1,0 +1,97 @@
+<app-headerwithoutsearch></app-headerwithoutsearch>
+
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+    <h2>You are here:</h2>
+    <div class="container">
+        <div class="row">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="https://www.canada.ca/en.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://www.canada.ca/en/revenue-agency.html">Canada Revenue Agency</a>
+                </li>
+                <li>
+
+                    <a href="/ebci/rhpd/prot/welcome.action">Payroll Deductions Online Calculator</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
+        <h1 id="wb-cont" property="name">
+          Payroll Deductions Online Calculator
+        </h1>
+        <p>
+          To calculate provincial payroll deductions for Quebec, download the WINRAS program from <a target="_blank" rel="external" href="https://www.revenuquebec.ca/en/online-services/online-services/winras-calculation-of-source-deductions-and-employer-contributions/" title="Revenu Québec">Revenu Québec</a>.
+        </p>
+        <form id="welcome" name="welcome" action="/ebci/rhpd/prot/welcome.action" method="post" autocomplete="off">
+          <input type="hidden" name="struts.token.name" value="token">
+          <input type="hidden" name="token" value="GZ5N59309L0V9MUHLNE7TMWSRYHU5CY9">
+          <fieldset>
+            <legend class="mrgn-bttm-0 required">
+              Select the type of calculation
+              <strong class="required">
+                (required)
+              </strong>
+            </legend>
+            <div class="radio">
+              <label for="welcome_calculationTypeSALARY"><input type="radio" name="calculationType" id="welcome_calculationTypeSALARY" checked="checked" value="SALARY">Salary</label>
+            </div>
+            <div class="radio">
+              <label for="welcome_calculationTypeCOMMISSION"><input type="radio" name="calculationType" id="welcome_calculationTypeCOMMISSION" value="COMMISSION">Commission (Use only if the employee incurs expenses and Form TD1X has been completed)</label>
+            </div>
+            <div class="radio">
+              <label for="welcome_calculationTypePENSION"><input type="radio" name="calculationType" id="welcome_calculationTypePENSION" value="PENSION">Pension</label>
+            </div>
+            <div class="radio">
+              <label for="welcome_calculationTypeVERIFY"><input type="radio" name="calculationType" id="welcome_calculationTypeVERIFY" value="VERIFY">Verify CPP contributions and EI premiums</label>
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <div class="form-group mrgn-lft-md mrgn-rght-md">
+              <input type="submit" value="Next" id="welcome_button_next" name="action:welcome_NextButton" class="btn btn-primary">
+            </div>
+          </div>
+        </form>
+
+        <span class="wb-sessto wb-init wb-sessto-inited" data-wet-boew="{
+          &quot;inactivity&quot;: 1620000,
+          &quot;sessionalive&quot;: 1620000,
+          &quot;reactionTime&quot;: 180000,
+          &quot;logouturl&quot;: &quot;/ebci/rhpd/pub/srvmsgSssnXprd.jsp&quot;,
+          &quot;refreshCallbackUrl&quot;: &quot;/ebci/rhpd/pub/rfrsh.action&quot;,
+          &quot;refreshOnClick&quot;: false
+        }" id="wb-auto-3">
+      </span>
+
+      <hr class="brdr-bttm mrgn-bttm-0 mrgn-tp-xl">
+      <div class="row pagedetails">
+        <div class="col-xs-12">
+          <dl id="scrnid-cra" class="mrgn-bttm-md">
+            <dt>ID: </dt>
+            <dd>WLCM</dd>
+          </dl>
+        </div>
+
+        <div class="col-xs-12 ">
+          <dl id="version-id-rhpd" class="mrgn-bttm-0">
+            <dt>Version: </dt>
+            <dd>V1810-03</dd>
+          </dl>
+        </div>
+      </div>
+    </main>
+
+    <app-navside></app-navside>
+    
+  </div>
+</div>
+
+
+<app-footerminimal></app-footerminimal>

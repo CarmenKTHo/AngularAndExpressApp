@@ -13,6 +13,10 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 import { AppRoutingModule } from './/app-routing.module';
 import { PdoclandingComponent } from './pdoclanding/pdoclanding.component';
+import { PdocComponent } from './pdoc/pdoc.component';
+import { HeaderwithoutsearchComponent } from './headerwithoutsearch/headerwithoutsearch.component';
+import { FooterminimalComponent } from './footerminimal/footerminimal.component';
+import { NavsideComponent } from './navside/navside.component';
 
 @NgModule({
     imports: [
@@ -28,7 +32,11 @@ import { PdoclandingComponent } from './pdoclanding/pdoclanding.component';
       HeaderComponent,
       FooterComponent,
       HomepageComponent,
-      PdoclandingComponent
+      PdoclandingComponent,
+      PdocComponent,
+      HeaderwithoutsearchComponent,
+      FooterminimalComponent,
+      NavsideComponent
     ],
     providers: [MoreservicesandinfoService],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
