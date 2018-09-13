@@ -1,8 +1,9 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA }      from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, APP_INITIALIZER }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import {FormsModule} from '@angular/forms';
-import {MoreservicesandinfoService} from './moreservicesandinfo.service';
+import { FormsModule } from '@angular/forms';
+import { MoreservicesandinfoService } from './moreservicesandinfo.service';
+import { TranslateService } from './translate.service';
 
 import { AppComponent }  from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -17,6 +18,7 @@ import { PdocComponent } from './pdoc/pdoc.component';
 import { HeaderwithoutsearchComponent } from './headerwithoutsearch/headerwithoutsearch.component';
 import { FooterminimalComponent } from './footerminimal/footerminimal.component';
 import { NavsideComponent } from './navside/navside.component';
+import { TranslatePipe } from './translate.pipe';
 
 @NgModule({
     imports: [
@@ -36,9 +38,13 @@ import { NavsideComponent } from './navside/navside.component';
       PdocComponent,
       HeaderwithoutsearchComponent,
       FooterminimalComponent,
-      NavsideComponent
+      NavsideComponent,
+      TranslatePipe
     ],
-    providers: [MoreservicesandinfoService],
+    providers: [
+      MoreservicesandinfoService,
+      TranslateService
+    ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     bootstrap: [AppComponent]
 })
