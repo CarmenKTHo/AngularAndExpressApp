@@ -5,7 +5,23 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="list-inline margin-bottom-none">
-              <li><a lang="fr" href="home-fr.html">Français</a></li>
+                <li>
+                  <div *ngIf="show">
+                    <p class="button" (click)="setLang('fr')"><u>Français</u></p>
+                  </div>
+                </li>
+
+                <li>
+                  <div *ngIf="!show">
+                    <p class="button" (click)="setLang('en')"><u>English</u></p>
+                  </div>
+                </li>
+
+              <!--<li><a lang="fr" href="home-fr.html">Français</a></li>-->
+              <!--<div>
+                <button (click)="setLang('fr')">Language: FR</button>
+                <button (click)="setLang('en')">Language: EN</button>
+              </div>-->
             </ul>
           </div>
         </div>
@@ -45,14 +61,14 @@
         <h2>Topics menu</h2>
         <div class="row">
           <ul class="list-inline menu">
-            <li><a href="https://www.canada.ca/en/services/jobs.html">Jobs</a></li>
-            <li><a href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration</a></li>
-            <li><a href="https://travel.gc.ca/">Travel</a></li>
-            <li><a href="https://www.canada.ca/en/services/business.html">Business</a></li>
-            <li><a href="https://www.canada.ca/en/services/benefits.html">Benefits</a></li>
-            <li><a href="https://www.canada.ca/en/services/health.html">Health</a></li>
-            <li><a href="https://www.canada.ca/en/services/taxes.html">Taxes</a></li>
-            <li><a href="https://www.canada.ca/en/services.html">More services</a></li>
+            <li><a href="https://www.canada.ca/en/services/jobs.html">{{ 'JOBS' | translate }}</a></li>
+            <li><a href="https://www.canada.ca/en/services/immigration-citizenship.html">{{ 'IMMIGRATION' | translate }}</a></li>
+            <li><a href="https://travel.gc.ca/">{{ 'TRAVEL' | translate }}</a></li>
+            <li><a href="https://www.canada.ca/en/services/business.html">{{ 'BUSINESS' | translate }}</a></li>
+            <li><a href="https://www.canada.ca/en/services/benefits.html">{{ 'BENEFITS' | translate }}</a></li>
+            <li><a href="https://www.canada.ca/en/services/health.html">{{ 'HEALTH' | translate }}</a></li>
+            <li><a href="https://www.canada.ca/en/services/taxes.html">{{ 'TAXES' | translate }}</a></li>
+            <li><a href="https://www.canada.ca/en/services.html">{{ 'MORESERVICES' | translate }}</a></li>
           </ul>
         </div>
       </div>

@@ -1,3 +1,21 @@
 {
-  "TITLE": "Mon Application i18n"
+  "JOBS": "Emplois",
+  "IMMIGRATION": "Immigration",
+  "TRAVEL": "Voyage",
+  "BUSINESS": "Entreprises",
+  "BENEFITS": "Prestations",
+  "HEALTH": "Santé",
+  "TAXES": "Impôts",
+  "MORESERVICES": "Autres services",
+
+  "MOSTREQUESTED": "Services et renseignements les plus demandés",
+  "FINDAJOB": "Trouver un emploi",
+  "EMPLOYMENTINSURANCE": "Assurance-emploi",
+  "MYACCOUNT": "Mon dossier pour les particuliers – Agence du revenu du Canada",
+  "CPP": "Régime de pensions du Canada",
+  "OLDAGE": "Pension de la Sécurité de la vieillesse",
+  "PASSPORT": "Obtenir un passeport",
+  "WEATHER": "Renseignements météorologiques",
+  "ARMEDFORCES": "S'enrôler dans les Forces armées canadiennes",
+  "BUSINESSPLANNING": "Planification d’entreprise"
 }

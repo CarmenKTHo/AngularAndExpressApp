@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '../translate.service';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  show: boolean = true;
 
+  constructor(private translate: TranslateService) {
+    translate.use('en').then(() => {
+      console.log(translate.data);
+    });
+  }
+
+  setLang(lang: string) {
+    this.translate.use(lang);
+    if(lang==="en") this.show = true;
+    if(lang==="fr") this.show = false;
+  }
   ngOnInit() {
   }
 
